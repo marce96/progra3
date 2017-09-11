@@ -1,0 +1,42 @@
+body{
+    background-color: #151630;
+    margin-top: 20px;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+hr{
+    background: white;
+    color: white;
+}
+.page-header{
+    margin-top: 30px;
+}
+
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+label{
+    font-weight: bold;
+}
+a{
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+}
+a.nounderline:link{
+    text-decoration: none;
+    list-style: none;
+}
+
+.radio-inline{
+    padding: 0 20px;
+}
+.ali{
+    margin-top: 80px;
+    text-align: center;
+}
