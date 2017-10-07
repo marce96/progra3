@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Confirmation Page</title>
+        <h:outputStylesheet library="css" name="estilos.css"/>
+    </h:head>
+    <h:body>
+        <h2>Confirmación ticket</h2>
+        <h:panelGrid class="mid" columns="2"
+                     columnClasses="rightalign-bold, leftalign">
+            <h:outputText value="Saludo: "/>
+            ${personaBean.saludo}
+            <h:outputText value="Nombre: "/>
+            ${personaBean.nombre}
+            <h:outputText value="Apellidos: "/>
+            ${personaBean.apellidos}
+            <h:outputText value="Edad: "/>
+            ${personaBean.edad}
+            <h:outputText value="Correo: "/>
+            ${personaBean.correo}
+            <h:outputText value="Entradas: "/>
+            ${personaBean.tickets}
+        </h:panelGrid>
+        
+        <h3>Se ha registrado con éxito al concierto!</h3>
+    </h:body>
+</html>
+

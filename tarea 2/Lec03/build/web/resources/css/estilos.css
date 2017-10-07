@@ -1,0 +1,44 @@
+
+/* 
+    Created on : Oct 6, 2017, 6:06:21 PM
+    Author     : mpozo
+*/
+html{
+    background-color: lightblue;
+}
+h1,h2,h3,h4{
+    text-align: center;
+
+    color: darkslategray;
+}
+.btn{
+    width: 100%; 
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: darkcyan;
+}
+form{
+    margin-left: 40%;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.rightalign {
+    text-align: right;
+}
+
+.rightalign-bold{
+    text-align: right;
+    font-weight: bold;
+}
+
+.leftalign{
+    text-align: left;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
