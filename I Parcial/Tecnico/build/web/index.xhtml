@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui">
+    
+    
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="style.css"/>
+    </h:head>
+    <h:body>
+        <b:container>
+        <b:form>
+            <b:panelGrid columns="1" style="width: 70%; margin: 15px auto;">
+                <h:panelGroup style="display: block; text-align: center;">
+                <h1 class="text-center" style="font-weight: bold">INGRESAR SOLICITUD SERVICIO</h1><br/>
+                <br/>
+                
+                <b:inputText label="CLIENTE: " placeholder="Ingresar cliente" value="#{datosSolicitud.cliente}"/><br/>
+   
+                <b:inputText label="DETALLES: " placeholder="Ingresar detalles" value="#{datosSolicitud.detalles}"/><br/>
+         
+                <b:inputText label="FECHA: " placeholder="dd/mm/yyyy" value="#{datosSolicitud.fecha}"/><br/>
+                <b:commandButton type="submit" action="#{datosSolicitud.transferir()}" look="info" value="Guardar" style="width: 100%"/><br/><br/>
+                <b:commandButton action="lista" look="success" value="Ver Lista" style="width: 100%"/><br/><br/>
+                <b:commandButton type="reset"  look="danger" action="index" value="Borrar campos" style="width: 100%"/>
+                </h:panelGroup>
+            </b:panelGrid>
+        </b:form>
+        </b:container>
+        
+    </h:body>
+</html>
+

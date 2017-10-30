@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+      <b:container>
+        <b:form>
+            <b:panelGrid columns="1">
+                <h1 class="text-center" style="font-weight: bold">LISTA SOLICITUD DE SERVICIO</h1><br/>
+                    <b:panel look="info">
+                       <f:facet name="heading">
+                         <i class="fa fa-group fa-3x" style="padding-right:20px" />
+                         <h:outputText value="#{administradorSolicitudes.fecha}" style="text-transform: uppercase; font-weight: bold; font-size: 28px; padding-right: 20px" />
+                         <b:badge style="margin-left:10px; background-color:#5cb85c" value="SOLICITUD"  />
+                       </f:facet>
+                        <h4 style="padding-left: 20%; margin-right: 25%"> #{administradorSolicitudes.mostrar}<br/></h4>
+                    </b:panel>
+            </b:panelGrid>
+            </b:form>
+          <br/>
+          
+          <h:form>
+          <h2>Solicitud reciente</h2>
+           <b:dataTable value="#{administradorSolicitudes.mostrar}"
+                 var="lista">
+        <b:dataTableColumn value="#{administradorSolicitudes.client}" />
+        <b:dataTableColumn value="#{administradorSolicitudes.detail}" />
+        <b:dataTableColumn value="#{administradorSolicitudes.date}" />
+        </b:dataTable>
+          <br />
+           <b:commandButton action="index" look="success" value="Regresar" style="float: right"/>
+           </h:form>
+        </b:container>
+     </h:body>
+</html>
+
